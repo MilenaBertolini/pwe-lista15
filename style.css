@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Inter:wght@300;400;700&family=Nunito:wght@300&family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #8b0000;
+    font-weight: 500;
+}
+
+header h1{
+    margin-bottom: 20px;
+}
+
+section{
+    padding: 30px;
+}
+
+section:nth-child(odd){
+    background-color: white;
+}
+
+section:nth-child(even){
+    background-color: lightgray;
+}
+
+.linha{
+    width: 180px;
+    margin: auto;
+    border-bottom: 2px solid #8b0000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container,
+.introducao,
+.portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.images img{
+    width: 35px;
+    margin: 3px;
+}
+
+.introducao h1{
+    color: #000;
+    font-weight: 900;
+}
+
+.introducao p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+input[type="button"]{
+    align-self: center;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #aa2e02;
+    color: #fff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tecnologias{
+    text-align: center;
+}
+
+.container div{
+    margin: 20px;
+}
+
+.tecnologias img{
+    width: 80px;
+    margin-top: 15px;
+}
+
+.tecnologias h2{
+    font-size: 16px;
+    margin: 12px 0px;
+}
+
+.tecnologias p,
+.portfolio p{
+    text-align: justify;
+}
+
+.portfolio img{
+    width: 250px;
+    margin: 15px 0px;
+    align-self: center;
+} 
+
+footer {
+    background-color: #000;
+    height: 60px;
+}
+
+footer p{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+/*Versão DESKTOP*/
+@media screen and (min-width: 1000px) {
+    .container{
+        flex-direction: row;
+    }
+
+    .introducao h1{
+        margin-top: 40px;
+        font-size: 35px;
+    }
+
+    .introducao p{
+        width: 700px;
+        align-self: center;
+        margin: 40px 0px;
+    }
+
+    .tecnologias img{
+        width: 120px;
+    }
+
+    .portfolio .container div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .portfolio img{
+        width: 350px;
+        padding-top: 10px;
+    }
+
+    .portfolio .container div:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    .portfolio .container div:nth-child(even){
+        flex-direction: row;
+    }
+
+    footer p{
+       font-size: 14px;
+    }
+}
