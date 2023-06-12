@@ -143,7 +143,7 @@ footer p{
         width: 120px;
     }
 
-    .portfolio .container div{
+    .portfolio div{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -160,7 +160,7 @@ footer p{
 
     .portfolio .container div:nth-child(even){
         flex-direction: row;
-    }
+    } 
 
     footer p{
        font-size: 14px;
